@@ -1,0 +1,13 @@
+.navigation {
+    width: 14%;
+}
+.paginator {
+    position: absolute;
+    right:30px;    
+}
+.user {
+    text-decoration: underline;
+}
+.logout {
+    max-height: 37px;
+}
