@@ -6,7 +6,7 @@ namespace System;
 
 class View
 {
-    public static function render(string $path, array $data = [])
+    public static function render($path, $data = [])
     {        
         $dirPath = __DIR__ . '/../Views/' . $path . '.php';
         // check file existing by path   

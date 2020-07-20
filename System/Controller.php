@@ -12,7 +12,7 @@ class Controller
 {
     public $middlewares = [];
 
-    public function middleware(string $middleware, $callback)
+    public function middleware($middleware, $callback)
     {
         $this->middlewares[$middleware] = $callback;
     }

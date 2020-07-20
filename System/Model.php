@@ -21,7 +21,7 @@ class Model
 
         return $pdo;
     }
-    public static function create(array $data = [],$model)
+    public static function create($data = [],$model)
     {
         $db = self::connect();
         if($model::$table) {            
@@ -36,7 +36,7 @@ class Model
             $preq->execute(array_values($data));
         }
     }
-    public static function where(string $key, string $value, $model)
+    public static function where($key, $value, $model)
     {
         $db = self::connect();
         $sql = 'SELECT * FROM ' . $model::$table . ' WHERE '
@@ -62,7 +62,7 @@ class Model
         :
             $query;
     }
-    public static function update($model,string $id, string $key, $value)
+    public static function update($model,$id, $key, $value)
     {
         $db = self::connect();
 
